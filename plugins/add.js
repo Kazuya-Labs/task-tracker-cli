@@ -10,6 +10,8 @@ export const addTask = (args) => {
     const strukturData = {
       status: null,
       title: text,
+      createdAt: new Date(),
+      updateAt: new Date(),
     };
     oldData.push(strukturData);
     writeJson(oldData);

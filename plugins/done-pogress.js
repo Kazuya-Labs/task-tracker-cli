@@ -13,6 +13,7 @@ export const updateTaskDone = (args) => {
     rawData[index - 1] = {
       ...item,
       status: "done",
+      updateAt: new Date(),
     };
     writeJson(rawData);
     console.log(`success update progress ${index} `);
