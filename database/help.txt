@@ -1,0 +1,7 @@
+
+ task add "item"                   : add task 
+ task update id "new item"         : update item by id 
+ task list                         : views all item
+ task delete id                    : delete item by id 
+ task mark-in-progress id          : update status to progress by id 
+ task mark-done id                 : update status to done by id 
