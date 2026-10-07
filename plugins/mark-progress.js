@@ -8,6 +8,7 @@ export const updateTaskProgress = (args) => {
     rawData[index - 1] = {
       ...rawData[index - 1],
       status: "in progress",
+      updateAt: new Date(),
     };
     writeJson(rawData);
     console.log(`success update progress ${Number(index)} `);

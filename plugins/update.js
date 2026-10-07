@@ -14,6 +14,7 @@ export const updateTask = (args) => {
     rawData[index - 1] = {
       ...item,
       title: newvalue,
+      updateAt: new Date(),
     };
     writeJson(rawData);
     console.log(`success update task ${Number(index)}`);
